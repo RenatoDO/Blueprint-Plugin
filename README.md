@@ -11,6 +11,8 @@ Objects distributed using true random numbers will tend to be clumpy because eac
 
 The linked page suggests choosing a set of candidate points at each iteration proportional to the number of points placed so far. If you naively loop through all of the already placed points to find the distances for each candidate, the resulting algorithm to generate N points will run in O(N3) time
 
+In order to see the diference between random generated seeds and blue noise seeds look at the images back to back of each corresponding seed numnber and counter number
+like Random_Seed5_Count10 .png with BlueNoise_Seed5_Count10 .png.
 
 I'll describe how my algorithm works which is in the function MakeRandomPointInRange in 
 BlueNoiseBPLibrary.cpp
