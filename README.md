@@ -14,6 +14,12 @@ The linked page suggests choosing a set of candidate points at each iteration pr
 In order to see the diference between random generated seeds and blue noise seeds look at the images back to back of each corresponding seed numnber and counter number
 like Random_Seed5_Count10 .png with BlueNoise_Seed5_Count10 .png.
 
+![image](https://user-images.githubusercontent.com/37048024/181531718-d3b3ca79-b708-48c4-8ed5-db60d97aa1d9.png)
+Randomly distributed objects
+
+![image](https://user-images.githubusercontent.com/37048024/181532005-f1ed1aa4-0496-4f3c-ad11-51b23987d62e.png)
+Blue-noise distributed objects
+
 I'll describe how my algorithm works which is in the function MakeRandomPointInRange in 
 BlueNoiseBPLibrary.cpp
 
