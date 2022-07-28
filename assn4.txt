@@ -1,0 +1,30 @@
+I did not attempt to do the extra credit.
+
+I'll describe how my algorithm works which is in the function MakeRandomPointInRange in 
+BlueNoiseBPLibrary.cpp
+
+Line 38 is just a simple check
+Lines 40 and 41. I created an array that will contain the candidates as locations and then
+I initialized the array with five times generated point number and FVector. Thus, the candidate
+array would contain five times the number of generated point times FVector.
+I mean (5*Generated Point Number) times FVector.
+
+The lines 44-46. The function will return the BestCandidate's location. Therefore, I 
+created these 2 variables to contain MaxDistance(farthest distance) and the Location 
+which will satisfy the MaxDistance. The loop which is located under these definitions 
+will change these variables according to candidates which are processed by loop until 
+that time.
+
+Line 48. This line will create random candidate locations. Above I just created an array
+and fill it by FVector, not random FVector. These lines will provide us with random candidate
+locations.
+
+The lines 50-54. I created a variable called MinDistance to store the closest distance between
+the candidates and all generated points and I set it by using the distance between the candidate
+and the first generated point. The loop located under the definition will iter to find the closes
+distance. At the end of the loop, we will have found the closest distance be a particular candidate
+and all generated points. We can use this data to compare this candidate with others.
+
+The lines 56-60. if this statement is true, it means we have found a candidate whose shortest
+distance is longer than the previous longest distance. In this case, we can update MaxDistance
+to MinDistance and BestCandidate to the candidate.
